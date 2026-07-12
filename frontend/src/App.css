@@ -1,0 +1,166 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE SETUP */
+html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #000;
+    color: #fff;
+}
+
+/* LINKS */
+.navLink {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.navLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #9333ea;
+    transition: width 0.3s ease-in;
+}
+
+.navLink:hover::after,
+.navLink.active::after {
+    width: 100%;
+}
+
+.navLink:hover,
+.navLink.active {
+    color: #9333ea;
+}
+
+/* COLORS */
+:root {
+    --purple-600: #9333ea;
+    --purple-700: #6d28d9;
+}
+
+.sp-text {
+    color: var(--purple-600);
+}
+
+/* BUTTONS */
+.btnNormal {
+    padding: 14px;
+    min-width: 130px;
+    background-color: var(--purple-700);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.btnNormal:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.btnWhite {
+    padding: 10px;
+    min-width: 130px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+/* BLOG GRID */
+.blogsCon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* BLOG CARD */
+.blog {
+    width: 100%;
+    padding: 15px;
+    height: 300px;
+    background-color: #1a1a1a; /* FIXED */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+
+.blog:hover {
+    transform: translateY(-3%);
+}
+.inputBox {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    background-color: #0c0c0c;
+    border-radius: 6px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.inputBox input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Placeholder color */
+.inputBox input::placeholder {
+    color: #888;
+}
+
+/* Focus effect 🔥 */
+.inputBox:focus-within {
+    border: 1px solid #3b82f6;
+}
+.inputBox textarea {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    min-height: 100px;
+    resize: vertical;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+svg{
+    color:#fff! important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
